@@ -21,13 +21,13 @@ h1      = html_content.match(/<h1\s*.*>(.+)<\/h1>/)[1] rescue nil
 author  = ENV['TM_ORGANIZATION_NAME']
 title   = h1 || ENV['NAME'] || ''
 
-html = ERB.new(template).result
+html_content = ERB.new(template).result
 
-html.gsub!(/[^\x00-\x7F]/) { |ch| "&##{ch.unpack("U")[0]};" }
+html_content.gsub!(/[^\x00-\x7F]/) { |ch| "&##{ch.unpack("U")[0]};" }
 
 File.open("#{output_basename}.html", 'w') { |f| f.write html_content }
 
-print html
+print html_content
 
 `/opt/local/bin/htmldoc -f "#{output_basename}.pdf" --bodyfont "Helvetica" --headfootfont "Helvetica" --no-compression --color --embedfonts --header "" --footer .1. --links --no-title --toctitle "" --tocheader "..." --tocfooter "..." "#{output_basename}.html"`
 
