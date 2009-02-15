@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>Markdown.pl|Smartypants.pl|markout.rb
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Convert Document / Selection to HTML and PDF files</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.markdown</string>
+	<key>uuid</key>
+	<string>B0C062BF-D1B1-4CBD-A99E-57A2D65115B7</string>
+</dict>
+</plist>
