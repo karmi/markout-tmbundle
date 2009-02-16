@@ -31,4 +31,4 @@ print html_content
 
 `/opt/local/bin/htmldoc -f "#{output_basename}.pdf" --bodyfont "Helvetica" --headfootfont "Helvetica" --no-compression --color --embedfonts --header "" --footer .1. --links --no-title --toctitle "" --tocheader "..." --tocfooter "..." "#{output_basename}.html"`
 
-`open #{output_basename}.pdf`
+`open -a "Preview.app" #{output_basename}.pdf`
