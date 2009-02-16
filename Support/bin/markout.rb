@@ -32,6 +32,11 @@ File.open("#{output_basename}.html", 'w') { |f| f.write html_content }
 print html_content
 STDOUT.flush
 
+if `which htmldoc` == ''
+  TextMate::UI.alert(:warning, 'Markout', "htmldoc for PDF conversion not available, exiting...")
+  exit 1
+end
+
 exit 0 unless TextMate::UI.request_confirmation( :title => 'Markout', :prompt => 'Generate PDF file as well?' )
 
 # == Write and display PDF
