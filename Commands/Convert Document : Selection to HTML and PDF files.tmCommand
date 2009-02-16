@@ -9,12 +9,14 @@
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
 	<key>name</key>
 	<string>Convert Document / Selection to HTML and PDF files</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>
-	<string>text.markdown</string>
+	<string>text.html.markdown</string>
 	<key>uuid</key>
 	<string>B0C062BF-D1B1-4CBD-A99E-57A2D65115B7</string>
 </dict>
