@@ -1,6 +1,6 @@
-# Markout for Markdown
+# Markout
 
-TextMate bundle to build *styled* HTML and PDF output of your Markdown text file for **nice looking** deliverables such as specifications, user stories, articles, ...
+TextMate bundle to build *styled* HTML and PDF output of your Markdown text file for **nice looking deliverables** such as specifications, user stories, articles, ...
 
 Started as a futile attempt to hack on MultiMarkdown's "Convert do PDF" script. Rewritten in Ruby. How _anybody_ can write Textmate commands in bash script...?
 
